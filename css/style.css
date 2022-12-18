@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 
 body {
@@ -8,6 +9,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+
 
 h1,
 h2,
@@ -20,4 +22,68 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* Work - main place holder images */
+.proj1 {
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.proj2 {
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.proj3 {
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.proj4 {
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.proj5 { 
+  background-image: url(../images/02-portfolio-1.jpg);
+}
+
+/* Targeting - flex properties within Work - division */
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Targeting flex-items for the x5 place holders */ 
+.flex-item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: calc(50% - 1em);
+  margin: .5em;
+  min-height: 170px;
+  text-decoration: none;        /* remove text underline */
+  padding-bottom: 20px;
+  border: 10px solid lightcoral;
+}
+/* Targing the 1st place holder for larger size */
+.flex-item:first-child {
+  min-height: 300px;
+  flex-basis: 100%;             /* set width for display */
+}
+/* Targeting each of the x5 titles */
+.flex-item div {
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+
+
+/* media queries - screen resolution code */
+
+@media screen and (max-width: 768px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+  /* Adjust first-child height to normal in mobile view */
+  .flex-item:first-child {
+    min-height: 150px;
+  }
 }
