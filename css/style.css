@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -9,6 +10,10 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-image: linear-gradient(
+    rgba(54, 54, 41, 0.173) 0%,
+    rgba(245, 245, 167, 0.6) 100%
+  );
 }
 
 
@@ -162,6 +167,8 @@ p {
   padding: 10px;
   /* border: 2px solid blue;*/
 }
+
+
 /* About me - end */
 
 
@@ -171,36 +178,83 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 5%;
   padding-right: 10px;
-  border: 2px solid blue
+  min-height: 100px;
+  color: darkblue;
+  background-color: rgb(198, 71, 71);
+  border: 2px solid blue 
 }
 
 .navBar h1 {
   width: 13%;
   font-weight: bolder;
+  padding-left: 35px;
+  background-color: lightcoral;
   border: 2px solid green;
 }
 
 /* Nav link container */
 .navigation {
   list-style: none;
-  border: 3px solid pink;
+ /* border: 3px solid pink; */
 }
 
 /* Nav link container - links configuration */
 .navigation p {
   display: inline-block;
-  padding: 0px 20px;                /* Spacing around Links */
-  cusrsor pointer;                  /* Cusrosr change to pointer */
+  padding: 0px 20px;                 /* Spacing around Links */
+  cusrsor: pointer;                  /* Cusrosr change to pointer */
 }
 
 /* Nav links - cusrosr color change hover effect */
 .navigation p a {
   transition: all 0.3s ease 0s;
+  color: lightcoral;
 }
 
 .navigation p a:hover {
+  color: #0088a9;
+}
+
+/* Footer - Navigation */ 
+.nav-ContactMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.nav-contactChild1 {
+  direction: rtl;
+  text-align: start;
+  padding: 10px;
+  padding-right: 20px;
+  border: 2px solid blue;
+}
+
+.nav-contactChild2 {
+  align-items: center;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+/* Nav link container - links configuration */
+.nav-contactChild2 p {
+  display: inline-block;            
+  padding: 0px 20px;                    /* Spacing around Links */
+  cursor: pointer;                      /* Cusrosr change to pointer */
+}
+
+}
+
+/* Nav links - cusrosr color change hover effect */
+.nav-contactChild2 p a {
+  transition: all 0.3s ease 0s;
+  color: darkblue;
+}
+
+.nav-contactChild2 p a:hover {
   color: #0088a9;
 }
 
@@ -221,6 +275,7 @@ p {
   .flex-aboutChild1:first-child {
     min-height: 150px;
   }
+
   .v-line {
     flex-basis: 100%;
   }
