@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -24,9 +25,17 @@ p {
   margin: 0;
 }
 
+/* Hero Banner - place holder */
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  min-height: 180px;
+}
+
+
 /* Work - main place holder images */
 .proj1 {
   background-image: url(../images/02-portfolio-1.jpg);
+  
 }
 
 .proj2 {
@@ -44,6 +53,25 @@ p {
 .proj5 { 
   background-image: url(../images/02-portfolio-1.jpg);
 }
+
+/* Targeting Hero Banner */
+.hero-banner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+.flex-heroTitle {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 2rem;
+  color: darkblue;
+  background-color: lightcoral;
+
+}
+/* Hero end */
 
 /* Targeting - flex properties within Work - division */
 .flex {
@@ -134,8 +162,50 @@ p {
   padding: 10px;
   /* border: 2px solid blue;*/
 }
-
 /* About me - end */
+
+
+/* Navigation CSS */
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 5%;
+  padding-right: 10px;
+  border: 2px solid blue
+}
+
+.navBar h1 {
+  width: 13%;
+  font-weight: bolder;
+  border: 2px solid green;
+}
+
+/* Nav link container */
+.navigation {
+  list-style: none;
+  border: 3px solid pink;
+}
+
+/* Nav link container - links configuration */
+.navigation p {
+  display: inline-block;
+  padding: 0px 20px;                /* Spacing around Links */
+  cusrsor pointer;                  /* Cusrosr change to pointer */
+}
+
+/* Nav links - cusrosr color change hover effect */
+.navigation p a {
+  transition: all 0.3s ease 0s;
+}
+
+.navigation p a:hover {
+  color: #0088a9;
+}
+
+/* nav end */
+
 
 /* media queries - screen resolution code */
 
