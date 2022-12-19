@@ -1,5 +1,18 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Project variables */
+:root {
+  --lightcoral: lightcoral;
+  --rbg-red: rgb(198, 71, 71);
+  --darkblue:  darkblue;
+  --turquoise: #0088a9;
+  --grey-lemon: rgba(54, 54, 41, 0.173);
+  --lemon: rgba(245, 245, 167, 0.6);
 }
 
 body {
@@ -7,6 +20,10 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-image: linear-gradient(
+    var(--grey-lemon)  0%,
+    var(--lemon) 100%
+  );
 }
 
 h1,
@@ -16,8 +33,251 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: var(--darkblue);
 }
 
 p {
   margin: 0;
 }
+
+/* Hero Banner - place holder */
+.hero-banner {
+  background-image: url(../images/pixar-lamp-1.png);
+  min-height: 180px;
+}
+
+
+/* Work - main place holder images */
+.proj1 {
+  background-image: url(../images/ufo2.png);
+  
+}
+
+.proj2 {
+  background-image: url(../images/mix-desk2.png);
+}
+
+.proj3 {
+  background-image: url(../images/Sound-bar2.png);
+}
+
+.proj4 {
+  background-image: url(../images/dice2.png);
+}
+
+.proj5 { 
+  background-image: url(../images/coding2.png);
+}
+/* Images end */
+
+/* Targeting Hero Banner */
+.hero-banner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  background-size: 1400px;
+}
+.flex-heroTitle {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 2rem;
+  color: var(--darkblue);
+  background-color: var(--lightcoral);
+}
+/* Hero end */
+
+/* Targeting - flex properties within Work - division */
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* Targetting - Work and x5 cards to create Grid effect */
+.flex > flex-Work1 {
+  flex: 1 1 60%;
+}
+.flex > .flex-Work2 {
+  flex: 1 1 40%;
+}
+
+/* Targeting flex-items for the x5 place holders */ 
+.flex-item {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: calc(50% - 1em);
+  margin: .5em;
+  min-height: 170px;
+  text-decoration: none;        /* remove text underline */
+  padding-bottom: 20px;
+  border: 10px solid  var(--lightcoral);
+}
+/* Targing the 1st place holder for larger size */
+.flex-item:first-child {
+  min-height: 300px;
+  flex-basis: 100%;             /* set width for display */
+}
+/* Targeting each of the x5 titles */
+.flex-item div {
+  background-color: var(--lightcoral);
+  padding: 10px;
+}
+
+.flex-Work1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-right: 20px;
+}
+
+.flex-Work2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+/* flex-item - end */
+
+
+/* Targeting - About me place holder to create framework */
+.flex-AboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 10px;
+}
+
+.flex-aboutChild1 {
+  direction: rtl;              /* algin text left to right */
+  text-align: start;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+.flex-aboutChild2 {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+/* Target - text adding padding */
+.flex-aboutChild2 p {
+  padding: 10px;
+}
+
+.flex-aboutChild3 {
+  display: flex;
+  align-items: center;
+}
+/* Targeting - image & positioning */
+.fit-pix {
+  position: 50%;
+  height: 240px;
+  padding: 10px;
+  margin: 0.5rem;
+  background-color: var(--lightcoral); 
+}
+/* About me - end */
+
+/* Navigation CSS */
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  min-height: 100px;
+  color: darkblue;
+  background-color: var(--rbg-red);
+}
+
+.navBar h1 {
+  width: 13%;
+  font-weight: bolder;
+  padding-left: 35px;
+  background-color: var(--lightcoral);
+ /* border: 2px solid green; */
+}
+
+/* Nav link container */
+.navigation {
+  list-style: none;
+}
+
+/* Nav link container - links configuration */
+.navigation p {
+  display: inline-block;
+  padding: 0px 20px;                 /* Spacing around Links */
+  cusrsor: pointer;                  /* Cusrosr change to pointer */
+}
+
+/* Nav links - cusrosr color change hover effect */
+.navigation p a {
+  transition: all 0.3s ease 0s;
+  color: var(--lightcoral);
+}
+
+.navigation p a:hover {
+  color: var(--turquoise);
+}
+
+/* Footer - Navigation */ 
+.nav-ContactMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.nav-contactChild1 {
+  direction: rtl;
+  text-align: start;
+  padding: 10px;
+  padding-right: 10px;
+}
+
+.nav-contactChild2 {
+  align-items: center;
+  padding: 10px;
+}
+
+/* Nav link container - links configuration */
+.nav-contactChild2 p {
+  display: inline-block;            
+  padding: 0px 20px;                    /* Spacing around Links */
+  cursor: pointer;                      /* Cusrosr change to pointer */
+}
+
+/* Nav links - cusrosr color change hover effect */
+.nav-contactChild2 p a {
+  transition: all 0.3s ease 0s;
+  color: var(--darkblue);
+}
+
+.nav-contactChild2 p a:hover {
+  color: var(--turquoise);
+}
+
+/* nav end */
+
+
+/* media queries - screen resolution code */
+
+@media screen and (max-width: 768px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+  /* Adjust first-child height to normal in mobile view */
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+   /* Apply above to "About me" */
+  .flex-aboutChild1:first-child {
+    min-height: 150px;
+  }
+}
+/* Queries end */
