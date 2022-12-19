@@ -51,7 +51,18 @@ p {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 10px;
+  border: 3px solid red;
 }
+
+/* Targetting - Work and x5 cards to create Grid effect */
+.flex > flex-Work1 {
+  flex: 1 1 60%;
+}
+.flex > .flex-Work2 {
+  flex: 1 1 40%;
+}
+
 /* Targeting flex-items for the x5 place holders */ 
 .flex-item {
   display: flex;
@@ -74,7 +85,57 @@ p {
   padding: 10px;
 }
 
+.flex-Work1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-right: 20px;
+ /* border: 2px solid green;*/
+}
 
+.flex-Work2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /*border: 2px solid blue;*/
+}
+/* flex-item - end */
+
+
+/* Targeting - About me place holder to create framework */
+.flex-AboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.flex-aboutChild1 {
+  direction: rtl;              /* algin text left to right */
+  text-align: start;
+  padding: 10px;
+  padding-right: 20px;
+  /* border: 2px solid green;*/
+}
+
+.v-line {
+  display: flex;
+  border-left: 6px solid black;
+  height: 90px;
+  position: absolute;
+  left: 8.5%;
+  margin-left: 4px;
+  top: 86.5px;
+}
+
+.flex-aboutChild2 {
+  align-items: center;
+  padding: 10px;
+  /* border: 2px solid blue;*/
+}
+
+/* About me - end */
 
 /* media queries - screen resolution code */
 
@@ -85,5 +146,12 @@ p {
   /* Adjust first-child height to normal in mobile view */
   .flex-item:first-child {
     min-height: 150px;
+  }
+   /* Apply above to "About me" */
+  .flex-aboutChild1:first-child {
+    min-height: 150px;
+  }
+  .v-line {
+    flex-basis: 100%;
   }
 }
