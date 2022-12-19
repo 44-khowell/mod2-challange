@@ -5,6 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Vertical Divide Pipe defs -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .vl-1 {
+      border-left: 6px solid darkblue;
+      height: 260px;
+    }
+  </style>
+  <style>
+    .vl-2 {
+      border-left: 6px solid darkblue;
+      height:1060px;
+    }
+  </style>
+  <style>
+    .vl-3 {
+      border-left: 6px solid darkblue;
+      height:60px;
+    }
+  </style>
+
   <title>Keith Howell // Web Developer</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -37,12 +60,18 @@
         <div class="flex-aboutChild1">
           <h2><a name="About">About Me</a></h2>
         </div>
+
+        <!-- Flex frame division -->
+        <div class="vl-1"></div>
         <div class="flex-aboutChild2">
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
               incididunt ut labore et dolore magna aliqua. Fames ac turpis egestas sed tempus urna et. 
               Dui ut ornare lectus sit. Neque viverra justo nec ultrices. Netus et malesuada fames 
               ac turpis egestas integer eget aliquet.
           </p>
+          <div class="flex-aboutChild3">
+            <img class="fit-pix" src="./images/KH_pix.png" alt="face of candidate"/>
+          </div>
         </div>
       </div>
     </section>
@@ -56,42 +85,43 @@
         <div class="flex-Work1">
           <h2><a name="Work">Work</a></h2>
         </div>
-
+        <!-- Flex frame division -->
+        <div class="vl-2"></div>
         <div class="flex-Work2">
         <!-- Main Place holder for all x5 cards-->
         <!-- first card -->
         <a href="#" class="proj1 flex-item"> 
           <div>
-            <h3>title1</h3>
-            <p>category</p>
+            <h3>Completed Projects</h3>
+            <p>Portfolio</p>
           </div>  
         </a>
         <!-- second card -->
         <a href="#" class="proj2 flex-item"> 
           <div>
-            <h3>title2</h3>
-            <p>category</p>
+            <h3>Story Boards</h3>
+            <p>Agile Project Assets</p>
           </div>  
         </a>
         <!-- third card -->
         <a href="#" class="proj3 flex-item">
           <div>
-            <h3>title3</h3>
-            <p>category</p>
+            <h3>Work In Progress</h3>
+            <p>UI/UX</p>
           </div>  
         </a>
         <!-- forth card -->
         <a href="#" class="proj4 flex-item">
           <div>
-            <h3>title4</h3>
-            <p>category</p>
+            <h3>Interactive Assets</h3>
+            <p>React/Javascript/CSS</p>
           </div>  
         </a>
         <!-- fifth card -->
         <a href="#" class="proj5 flex-item">
           <div>
-            <h3>title5</h3>
-            <p>category</p>
+            <h3>Classic Coding Depository</h3>
+            <p>HTML/CSS</p>
           </div>  
         </a>
       </div>
@@ -104,6 +134,8 @@
         <div class="nav-contactChild1">
           <h2><a name="Contact">Contact Me</a></h2>
         </div>
+        <!-- Flex frame division -->
+        <div class="vl-3"></div>
         <div class="nav-contactChild2">
           <p><a href="#">Mobile: +44-0715-694243</a></p>
           <p><a href="mailto:kh.saint@pm.me">eMail: kh.saint@pm.me</a></p>

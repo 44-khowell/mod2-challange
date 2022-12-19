@@ -24,6 +24,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: darkblue;
 }
 
 p {
@@ -152,23 +153,32 @@ p {
   /* border: 2px solid green;*/
 }
 
-.v-line {
-  display: flex;
-  border-left: 6px solid black;
-  height: 90px;
-  position: absolute;
-  left: 8.5%;
-  margin-left: 4px;
-  top: 86.5px;
-}
-
 .flex-aboutChild2 {
-  align-items: center;
+  display: flex;
+  align-items: flex-start;
   padding: 10px;
-  /* border: 2px solid blue;*/
 }
 
+/* Target - text adding padding */
+.flex-aboutChild2 p {
+  padding: 10px;
+}
 
+.flex-aboutChild3 {
+  display: flex;
+  align-items: center;
+ /* border: 2px solid blue; */
+}
+/* Targeting - image & positioning */
+.fit-pix {
+  position: 50%;
+  height: 240px;
+  padding: 10px;
+  margin: 0.5rem;
+  background-color: lightcoral;
+  /* border: 2px solid green;*/
+  
+}
 /* About me - end */
 
 
@@ -229,14 +239,14 @@ p {
   direction: rtl;
   text-align: start;
   padding: 10px;
-  padding-right: 20px;
+  padding-right: 10px;
   border: 2px solid blue;
 }
 
 .nav-contactChild2 {
   align-items: center;
   padding: 10px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 /* Nav link container - links configuration */
@@ -244,8 +254,6 @@ p {
   display: inline-block;            
   padding: 0px 20px;                    /* Spacing around Links */
   cursor: pointer;                      /* Cusrosr change to pointer */
-}
-
 }
 
 /* Nav links - cusrosr color change hover effect */
@@ -274,9 +282,5 @@ p {
    /* Apply above to "About me" */
   .flex-aboutChild1:first-child {
     min-height: 150px;
-  }
-
-  .v-line {
-    flex-basis: 100%;
   }
 }
