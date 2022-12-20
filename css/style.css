@@ -43,6 +43,7 @@ p {
 /* Hero Banner - place holder */
 .hero-banner {
   background-image: url(../images/pixar-lamp-1.png);
+  background-size: cover;
   min-height: 180px;
 }
 
@@ -50,23 +51,27 @@ p {
 /* Work - main place holder images */
 .proj1 {
   background-image: url(../images/ufo2.png);
-  
+  background-size: cover;
 }
 
 .proj2 {
   background-image: url(../images/mix-desk2.png);
+  background-size: cover;
 }
 
 .proj3 {
   background-image: url(../images/Sound-bar2.png);
+  background-size: cover;
 }
 
 .proj4 {
   background-image: url(../images/dice2.png);
+  background-size: cover;
 }
 
 .proj5 { 
   background-image: url(../images/coding2.png);
+  background-size: cover;
 }
 /* Images end */
 
